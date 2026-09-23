@@ -24,3 +24,6 @@
 ## Screenshots
 
 <!-- Add screenshots for UI changes when useful. -->
+## Contributor license
+
+- [ ] I have read and agree to [CLA.md](../CLA.md), and I am authorized to submit this contribution under those terms.

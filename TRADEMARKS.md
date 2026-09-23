@@ -7,3 +7,5 @@ That software license does not grant permission to use the **Tashev Guard** name
 Forks may describe themselves factually as forks of Tashev Guard, but should use their own product name and branding when redistributed as a separate product.
 
 This notice does not limit uses that are otherwise permitted by applicable trademark law.
+
+The names **Tashev Guard**, **Tashev Guard Community**, and **Tashev Guard Pro** are project branding names covered by this notice.

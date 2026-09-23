@@ -15,6 +15,13 @@ Changes should preserve these project rules:
 - do not weaken localhost-only defaults;
 - do not add secrets, credentials, personal data, or real user telemetry to tests.
 
+
+## Contributor License Agreement
+
+Before a pull request can be merged, each contributor must acknowledge [CLA.md](CLA.md). This keeps Community contributions GPL-licensed while allowing the Tashev Guard project owner to also use accepted contributions in separately licensed commercial offerings.
+
+If you are contributing for an employer or organization, make sure you are authorized to accept the CLA for that contribution.
+
 ## Development
 
 Desktop:

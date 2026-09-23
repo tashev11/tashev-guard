@@ -1,6 +1,8 @@
-# Tashev Guard
+# Tashev Guard Community
 
 **Open-source local-first монитор безопасности для собственных устройств.**
+
+Этот репозиторий — **Community-редакция Tashev Guard**. Облако, единая панель нескольких устройств, команды/организации и коммерческие сценарии реагирования развиваются отдельно в **Tashev Guard Pro**. Модель описана в [COMMERCIAL.md](COMMERCIAL.md).
 
 Tashev Guard помогает ответить на простой вопрос: **«кто и что сейчас может подключаться к моему компьютеру?»** — без необходимости разбираться в PID, TCP LISTEN, LaunchAgents, WinRM, VNC или SSH.
 
@@ -110,7 +112,7 @@ cd android
 
 ## Участие
 
-Правила: [CONTRIBUTING.md](CONTRIBUTING.md).
+Правила: [CONTRIBUTING.md](CONTRIBUTING.md). Перед merge публичного вклада требуется согласие с [CLA.md](CLA.md).
 
 Уязвимости не публикуйте в обычных Issues — используйте инструкции из [SECURITY.md](SECURITY.md).
 

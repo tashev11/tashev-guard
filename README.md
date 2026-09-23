@@ -1,4 +1,4 @@
-# Tashev Guard
+# Tashev Guard Community
 
 [![License: GPL-3.0](https://img.shields.io/badge/License-GPLv3-blue.svg)](LICENSE)
 ![Status](https://img.shields.io/badge/status-preview-orange)
@@ -7,6 +7,8 @@
 ![Android](https://img.shields.io/badge/Android-API%2036-blue)
 
 **Open-source, local-first security monitor for your own devices.**
+
+This repository is the **Tashev Guard Community** edition. Commercial cloud, multi-device, organization, and managed-response features are developed separately as **Tashev Guard Pro**. See [Community and Commercial Editions](COMMERCIAL.md).
 
 Tashev Guard helps you understand who and what can connect to your computer, which processes are listening for inbound connections, what changed in persistence/autostart, and whether common remote-access tools are active.
 
@@ -183,7 +185,7 @@ Short version:
 
 ## Contributing
 
-Contributions are welcome. Please read [CONTRIBUTING.md](CONTRIBUTING.md) before opening a pull request.
+Contributions are welcome. Please read [CONTRIBUTING.md](CONTRIBUTING.md) and [CLA.md](CLA.md) before opening a pull request.
 
 For security vulnerabilities, **do not open a public issue**. See [SECURITY.md](SECURITY.md).
 
