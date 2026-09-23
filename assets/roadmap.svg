@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="760" viewBox="0 0 1600 760" role="img" aria-labelledby="title desc">
+<title id="title">Tashev Guard Roadmap</title><desc id="desc">Roadmap from hardened Community to advanced Pro platform.</desc>
+<defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#07111f"/><stop offset="1" stop-color="#0a1730"/></linearGradient></defs>
+<rect width="1600" height="760" rx="32" fill="url(#bg)"/>
+<text x="800" y="78" fill="#fff" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="52" font-weight="800" text-anchor="middle">Tashev Guard <tspan fill="#38d8f6">Roadmap</tspan></text>
+<text x="800" y="116" fill="#8fa5c0" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="20" text-anchor="middle">From local visibility to a secure multi-device security platform</text>
+<g transform="translate(55 185)"><rect width="350" height="420" rx="26" fill="#0c1f31" stroke="#2dd4bf" stroke-width="2"/>
+<circle cx="52" cy="55" r="28" fill="#0f766e"/><text x="52" y="64" fill="#fff" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="26" font-weight="800" text-anchor="middle">1</text>
+<text x="96" y="55" fill="#7df7db" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="24" font-weight="800">NOW · HARDEN</text>
+<text x="32" y="118" fill="#fff" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="24" font-weight="800">Community confidence</text>
+<g fill="#a9bdd4" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="17">
+<text x="40" y="170">• Windows runtime verification</text><text x="40" y="212">• signed desktop builds</text>
+<text x="40" y="254">• Android device smoke test</text><text x="40" y="296">• redacted audit export</text><text x="40" y="338">• packaging &amp; docs polish</text></g>
+<text x="32" y="388" fill="#64e7d2" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="15" font-weight="700">Goal: trustworthy public foundation</text></g>
+<g transform="translate(435 185)"><rect width="350" height="420" rx="26" fill="#0c1c32" stroke="#38bdf8" stroke-width="2"/>
+<circle cx="52" cy="55" r="28" fill="#155e75"/><text x="52" y="64" fill="#fff" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="26" font-weight="800" text-anchor="middle">2</text>
+<text x="96" y="55" fill="#7dd3fc" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="24" font-weight="800">NEXT · CONNECT</text>
+<text x="32" y="118" fill="#fff" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="24" font-weight="800">Pro foundation</text>
+<g fill="#a9bdd4" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="17">
+<text x="40" y="170">• pairing &amp; device identity</text><text x="40" y="212">• outbound device hub</text>
+<text x="40" y="254">• heartbeat &amp; device status</text><text x="40" y="296">• multi-device dashboard</text><text x="40" y="338">• append-only audit log</text></g>
+<text x="32" y="388" fill="#8bdcff" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="15" font-weight="700">Goal: secure cross-device visibility</text></g>
+<g transform="translate(815 185)"><rect width="350" height="420" rx="26" fill="#121934" stroke="#6366f1" stroke-width="2"/>
+<circle cx="52" cy="55" r="28" fill="#4338ca"/><text x="52" y="64" fill="#fff" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="26" font-weight="800" text-anchor="middle">3</text>
+<text x="96" y="55" fill="#a5b4fc" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="24" font-weight="800">LATER · SCALE</text>
+<text x="32" y="118" fill="#fff" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="24" font-weight="800">Business value</text>
+<g fill="#babee2" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="17">
+<text x="40" y="170">• long-term event history</text><text x="40" y="212">• alerts &amp; integrations</text>
+<text x="40" y="254">• teams · roles · policies</text><text x="40" y="296">• reports &amp; analytics</text><text x="40" y="338">• subscriptions &amp; billing</text></g>
+<text x="32" y="388" fill="#c4b5fd" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="15" font-weight="700">Goal: repeatable commercial value</text></g>
+<g transform="translate(1195 185)"><rect width="350" height="420" rx="26" fill="#18162f" stroke="#8b5cf6" stroke-width="2"/>
+<circle cx="52" cy="55" r="28" fill="#6d28d9"/><text x="52" y="64" fill="#fff" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="26" font-weight="800" text-anchor="middle">4</text>
+<text x="96" y="55" fill="#c4b5fd" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="24" font-weight="800">ADVANCED</text>
+<text x="32" y="118" fill="#fff" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="24" font-weight="800">Security platform</text>
+<g fill="#c1bddf" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="17">
+<text x="40" y="170">• threat-intel enrichment</text><text x="40" y="212">• safe response actions</text>
+<text x="40" y="254">• multi-device analytics</text><text x="40" y="296">• self-hosted enterprise</text><text x="40" y="338">• ecosystem integrations</text></g>
+<text x="32" y="388" fill="#d8ccff" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="15" font-weight="700">Goal: controlled automation at scale</text></g>
+<path d="M405 395h30M785 395h30M1165 395h30" stroke="#7dd3fc" stroke-width="5" stroke-linecap="round"/>
+<text x="800" y="682" fill="#fff" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="26" font-weight="800" text-anchor="middle">Open source where it builds trust. Private where it creates commercial value.</text>
+<text x="800" y="716" fill="#7dd3fc" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="16" text-anchor="middle">Local-first · least privilege · explainable findings · auditable remote actions</text>
+</svg>
