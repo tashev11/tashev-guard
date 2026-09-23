@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="760" viewBox="0 0 1600 760" role="img" aria-labelledby="title desc">
+<title id="title">Tashev Guard Community</title>
+<desc id="desc">Open-source local-first security monitor for macOS, Windows and Android.</desc>
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#07111f"/><stop offset=".55" stop-color="#0a1b31"/><stop offset="1" stop-color="#07111f"/></linearGradient>
+  <linearGradient id="cyan" x1="0" x2="1"><stop stop-color="#2dd4bf"/><stop offset="1" stop-color="#38bdf8"/></linearGradient>
+  <linearGradient id="purple" x1="0" x2="1"><stop stop-color="#60a5fa"/><stop offset="1" stop-color="#8b5cf6"/></linearGradient>
+  <filter id="glow"><feGaussianBlur stdDeviation="10" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  <pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse"><path d="M48 0H0V48" fill="none" stroke="#7dd3fc" stroke-opacity=".05"/></pattern>
+</defs>
+<rect width="1600" height="760" rx="32" fill="url(#bg)"/>
+<rect width="1600" height="760" rx="32" fill="url(#grid)"/>
+<circle cx="1330" cy="90" r="260" fill="#0ea5e9" opacity=".07"/>
+<circle cx="140" cy="700" r="250" fill="#14b8a6" opacity=".06"/>
+
+<!-- shield -->
+<g transform="translate(112 92)" filter="url(#glow)">
+  <path d="M86 4l70 24-10 91c-5 43-29 77-60 94-31-17-55-51-60-94L16 28z" fill="none" stroke="url(#cyan)" stroke-width="11"/>
+  <path d="M86 36l38 13-6 63c-3 24-14 46-32 59-18-13-29-35-32-59l-6-63z" fill="url(#cyan)" opacity=".92"/>
+  <path d="M84 65v78" stroke="#06111f" stroke-width="13" stroke-linecap="round"/>
+  <path d="M63 86h42" stroke="#06111f" stroke-width="13" stroke-linecap="round"/>
+</g>
+
+<text x="320" y="125" fill="#eaf4ff" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="34" font-weight="800" letter-spacing="3">TASHEV GUARD</text>
+<text x="320" y="166" fill="#7dd3fc" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="18" font-weight="600" letter-spacing="4">COMMUNITY · LOCAL-FIRST · OPEN SOURCE</text>
+
+<text x="110" y="325" fill="#ffffff" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="72" font-weight="800">Know what is connected.</text>
+<text x="110" y="407" fill="url(#cyan)" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="72" font-weight="800">Understand what changed.</text>
+<text x="110" y="472" fill="#a9bad1" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="26">A transparent, local-first security monitor for your own devices.</text>
+
+<!-- badges -->
+<g font-family="Inter,Segoe UI,Arial,sans-serif" font-size="18" font-weight="700">
+  <rect x="110" y="525" width="160" height="48" rx="24" fill="#103c36" stroke="#2dd4bf"/>
+  <text x="190" y="556" fill="#7df7db" text-anchor="middle">GPL-3.0</text>
+  <rect x="288" y="525" width="180" height="48" rx="24" fill="#102b43" stroke="#38bdf8"/>
+  <text x="378" y="556" fill="#8bdcff" text-anchor="middle">macOS tested</text>
+  <rect x="486" y="525" width="210" height="48" rx="24" fill="#2c2643" stroke="#8b5cf6"/>
+  <text x="591" y="556" fill="#c4b5fd" text-anchor="middle">Android API 36</text>
+  <rect x="714" y="525" width="225" height="48" rx="24" fill="#3a3118" stroke="#facc15"/>
+  <text x="826" y="556" fill="#fde68a" text-anchor="middle">Windows preview</text>
+</g>
+
+<g transform="translate(1060 228)">
+  <rect width="425" height="330" rx="24" fill="#0d1d31" stroke="#38bdf8" stroke-opacity=".42"/>
+  <text x="34" y="54" fill="#7dd3fc" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="16" font-weight="700" letter-spacing="2">SECURITY SNAPSHOT</text>
+  <circle cx="62" cy="112" r="14" fill="#22c55e"/>
+  <text x="94" y="120" fill="#eff7ff" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="25" font-weight="700">Everything looks calm</text>
+  <line x1="34" y1="154" x2="391" y2="154" stroke="#ffffff" stroke-opacity=".1"/>
+  <text x="34" y="205" fill="#8da3bd" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="18">Active connections</text>
+  <text x="365" y="205" fill="#ffffff" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="28" font-weight="800" text-anchor="end">244</text>
+  <text x="34" y="250" fill="#8da3bd" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="18">Listening ports</text>
+  <text x="365" y="250" fill="#ffffff" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="28" font-weight="800" text-anchor="end">14</text>
+  <text x="34" y="295" fill="#8da3bd" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="18">Remote sessions</text>
+  <text x="365" y="295" fill="#7df7db" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="28" font-weight="800" text-anchor="end">0</text>
+</g>
+
+<text x="110" y="680" fill="#607792" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="18">No cloud required · No hidden telemetry · Explainable findings · Local dashboard</text>
+</svg>

@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="720" viewBox="0 0 1600 720" role="img" aria-labelledby="title desc">
+<title id="title">Community to Pro architecture</title>
+<desc id="desc">Tashev Guard Community connects to optional Pro services through a public versioned outbound protocol.</desc>
+<defs>
+ <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#07111f"/><stop offset="1" stop-color="#0a1b31"/></linearGradient>
+ <linearGradient id="cyan" x1="0" x2="1"><stop stop-color="#2dd4bf"/><stop offset="1" stop-color="#38bdf8"/></linearGradient>
+ <linearGradient id="purple" x1="0" x2="1"><stop stop-color="#60a5fa"/><stop offset="1" stop-color="#8b5cf6"/></linearGradient>
+</defs>
+<rect width="1600" height="720" rx="32" fill="url(#bg)"/>
+<text x="800" y="78" fill="#ffffff" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="42" font-weight="800" text-anchor="middle">Architecture: local-first by default</text>
+<text x="800" y="116" fill="#8fa5c0" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="19" text-anchor="middle">Community works on its own. Pro is optional and paired explicitly.</text>
+
+<g transform="translate(70 175)">
+ <rect width="420" height="340" rx="24" fill="#0d1d31" stroke="#2dd4bf" stroke-width="2"/>
+ <text x="34" y="55" fill="#7df7db" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="15" font-weight="800" letter-spacing="2">PUBLIC · GPL-3.0</text>
+ <text x="34" y="98" fill="#ffffff" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="30" font-weight="800">Community Agent</text>
+ <text x="34" y="145" fill="#cfe0f3" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="18">macOS · Windows · Android</text>
+ <text x="34" y="192" fill="#8fa5c0" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="17">• local security signals</text>
+ <text x="34" y="230" fill="#8fa5c0" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="17">• baseline &amp; local history</text>
+ <text x="34" y="268" fill="#8fa5c0" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="17">• localhost dashboard</text>
+ <text x="34" y="306" fill="#8fa5c0" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="17">• no cloud account required</text>
+</g>
+
+<g transform="translate(590 205)">
+ <rect width="420" height="280" rx="24" fill="#10203a" stroke="#38bdf8" stroke-width="2"/>
+ <text x="34" y="54" fill="#7dd3fc" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="15" font-weight="800" letter-spacing="2">PUBLIC SPEC · VERSIONED</text>
+ <text x="34" y="98" fill="#ffffff" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="30" font-weight="800">Device Protocol</text>
+ <text x="34" y="146" fill="#9bdcff" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="17">• explicit pairing</text>
+ <text x="34" y="184" fill="#9bdcff" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="17">• outbound TLS only</text>
+ <text x="34" y="222" fill="#9bdcff" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="17">• revocable device identity</text>
+ <text x="34" y="260" fill="#9bdcff" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="17">• auditable remote actions</text>
+</g>
+
+<g transform="translate(1110 175)">
+ <rect width="420" height="340" rx="24" fill="#161b39" stroke="#8b5cf6" stroke-width="2"/>
+ <text x="34" y="55" fill="#c4b5fd" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="15" font-weight="800" letter-spacing="2">PRIVATE · COMMERCIAL</text>
+ <text x="34" y="98" fill="#ffffff" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="30" font-weight="800">Tashev Guard Pro</text>
+ <text x="34" y="145" fill="#e2dcff" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="18">Optional control plane</text>
+ <text x="34" y="192" fill="#a9a2d4" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="17">• device pairing &amp; identity</text>
+ <text x="34" y="230" fill="#a9a2d4" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="17">• multi-device dashboard</text>
+ <text x="34" y="268" fill="#a9a2d4" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="17">• alerts · teams · policies</text>
+ <text x="34" y="306" fill="#a9a2d4" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="17">• long-term history &amp; reports</text>
+</g>
+
+<path d="M490 345H570" stroke="url(#cyan)" stroke-width="5"/><path d="M570 345l-18-11v22z" fill="#38bdf8"/>
+<path d="M1010 345H1090" stroke="url(#purple)" stroke-width="5"/><path d="M1090 345l-18-11v22z" fill="#8b5cf6"/>
+
+<g font-family="Inter,Segoe UI,Arial,sans-serif">
+ <rect x="120" y="585" width="270" height="78" rx="18" fill="#0b2b29" stroke="#2dd4bf" stroke-opacity=".55"/>
+ <text x="255" y="616" fill="#7df7db" font-size="17" font-weight="800" text-anchor="middle">LOCAL-FIRST</text>
+ <text x="255" y="643" fill="#9bb1c9" font-size="14" text-anchor="middle">works without Pro</text>
+
+ <rect x="475" y="585" width="270" height="78" rx="18" fill="#0d2538" stroke="#38bdf8" stroke-opacity=".55"/>
+ <text x="610" y="616" fill="#8bdcff" font-size="17" font-weight="800" text-anchor="middle">LEAST PRIVILEGE</text>
+ <text x="610" y="643" fill="#9bb1c9" font-size="14" text-anchor="middle">minimum required access</text>
+
+ <rect x="830" y="585" width="270" height="78" rx="18" fill="#0d2538" stroke="#38bdf8" stroke-opacity=".55"/>
+ <text x="965" y="616" fill="#8bdcff" font-size="17" font-weight="800" text-anchor="middle">EXPLAINABLE</text>
+ <text x="965" y="643" fill="#9bb1c9" font-size="14" text-anchor="middle">evidence behind findings</text>
+
+ <rect x="1185" y="585" width="295" height="78" rx="18" fill="#211d3a" stroke="#8b5cf6" stroke-opacity=".55"/>
+ <text x="1332" y="616" fill="#c4b5fd" font-size="17" font-weight="800" text-anchor="middle">CLEAN BOUNDARY</text>
+ <text x="1332" y="643" fill="#aaa5cb" font-size="14" text-anchor="middle">Community ≠ Pro business logic</text>
+</g>
+</svg>
