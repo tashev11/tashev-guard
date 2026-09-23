@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Tashev Guard</string>
+    <string name="attention_count">Нужно проверить: %1$d</string>
+</resources>

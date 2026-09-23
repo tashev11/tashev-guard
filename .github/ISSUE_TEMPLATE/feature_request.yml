@@ -1,0 +1,33 @@
+name: Feature request
+description: Suggest an improvement
+title: "[Feature]: "
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: What security or usability problem should this solve?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed solution
+    validations:
+      required: true
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Platform
+      options:
+        - Cross-platform
+        - macOS
+        - Windows
+        - Android
+        - iOS
+  - type: textarea
+    id: privacy
+    attributes:
+      label: Security / privacy impact
+      description: Does this require elevated privileges, external services, traffic interception, or new data storage?

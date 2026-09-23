@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Tashev Guard</title>
+  <meta name="theme-color" content="#0b1020">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <div class="shell">
+    <header class="topbar">
+      <div class="brand">
+        <span class="shield">T</span>
+        <div><b>Tashev Guard</b><small>локальный центр безопасности</small></div>
+      </div>
+      <div class="privacy">● local-only · 127.0.0.1</div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div>
+          <p class="eyebrow">СОСТОЯНИЕ УСТРОЙСТВА</p>
+          <h1 id="headline">Проверяем компьютер…</h1>
+          <p id="summary">Собираем сетевые соединения, удалённые сессии и системные изменения.</p>
+        </div>
+        <button id="scanBtn">Кто подключён ко мне?</button>
+      </section>
+
+      <section class="stats">
+        <article><span>Активные соединения</span><strong id="connections">—</strong></article>
+        <article><span>Открытые порты</span><strong id="ports">—</strong></article>
+        <article><span>Автозагрузка</span><strong id="autoruns">—</strong></article>
+        <article><span>Требует внимания</span><strong id="findings">—</strong></article>
+      </section>
+
+      <section class="grid">
+        <article class="panel focus">
+          <div class="panel-head">
+            <div><p class="eyebrow">СЕЙЧАС</p><h2>Что требует внимания</h2></div>
+            <span id="statusBadge" class="badge">Проверка</span>
+          </div>
+          <div id="findingsList" class="list empty">Сканирование…</div>
+        </article>
+
+        <article class="panel">
+          <div class="panel-head">
+            <div><p class="eyebrow">ЭТАЛОН</p><h2>Обучение системы</h2></div>
+            <button id="relearnBtn" class="secondary">Переобучить</button>
+          </div>
+          <div id="baselineBox" class="list empty">Загрузка baseline…</div>
+        </article>
+      </section>
+
+      <section class="grid">
+        <article class="panel">
+          <div class="panel-head">
+            <div><p class="eyebrow">УДАЛЁННЫЙ ДОСТУП</p><h2>Инструменты и сессии</h2></div>
+          </div>
+          <div id="remoteList" class="list empty">Сканирование…</div>
+        </article>
+
+        <article class="panel">
+          <div class="panel-head">
+            <div><p class="eyebrow">АВТОЗАГРУЗКА</p><h2>LaunchAgents / Startup</h2></div>
+          </div>
+          <div id="autorunList" class="list empty">Сканирование…</div>
+        </article>
+      </section>
+
+      <section class="panel">
+        <div class="panel-head">
+          <div><p class="eyebrow">СЕТЬ</p><h2>Активные соединения</h2></div>
+          <span class="muted" id="updated">—</span>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Процесс</th><th>PID</th><th>Локально</th><th>Удалённо</th><th>DNS</th></tr></thead>
+            <tbody id="connectionsTable"></tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="panel">
+        <div class="panel-head">
+          <div><p class="eyebrow">LISTENING</p><h2>Кто принимает подключения</h2></div>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Процесс</th><th>PID</th><th>Адрес</th><th>Порт</th></tr></thead>
+            <tbody id="listeningTable"></tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="panel">
+        <div class="panel-head">
+          <div><p class="eyebrow">ИСТОРИЯ</p><h2>Новые события</h2></div>
+        </div>
+        <div id="eventsList" class="list empty">Новых событий пока нет.</div>
+      </section>
+
+      <p class="footnote">
+        Tashev Guard показывает наблюдаемые технические признаки. Открытый порт или установленный инструмент удалённого доступа сами по себе не доказывают взлом.
+      </p>
+    </main>
+  </div>
+  <script type="module" src="/app.js"></script>
+</body>
+</html>

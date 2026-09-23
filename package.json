@@ -1,0 +1,34 @@
+{
+  "name": "tashev-guard",
+  "version": "0.2.0",
+  "private": false,
+  "type": "module",
+  "description": "Local-first security dashboard for network connections, listening ports and remote-access indicators.",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "start": "node src/server.js",
+    "test": "node --test",
+    "check": "npm test",
+    "autostart:mac": "zsh scripts/install-macos.sh",
+    "autostart:win": "powershell -ExecutionPolicy Bypass -File scripts/install-windows.ps1",
+    "scan": "node src/scan-cli.js"
+  },
+  "keywords": [
+    "security",
+    "privacy",
+    "network-monitor",
+    "remote-access",
+    "local-first"
+  ],
+  "license": "GPL-3.0-only",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tashev11/tashev-guard.git"
+  },
+  "bugs": {
+    "url": "https://github.com/tashev11/tashev-guard/issues"
+  },
+  "homepage": "https://github.com/tashev11/tashev-guard#readme"
+}
