@@ -1,10 +1,6 @@
 name: Android companion
 
 on:
-  pull_request:
-    paths:
-      - "android/**"
-      - ".github/workflows/android.yml"
   workflow_dispatch:
 
 permissions:
