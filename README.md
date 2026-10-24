@@ -150,12 +150,13 @@ Read the full [Community & Commercial model](COMMERCIAL.md) and [Community / Pro
 |---|---|---|
 | **macOS** | ✅ **Runtime tested** | connections, listeners, remote sessions/tools, signatures, LaunchAgents/Daemons, baseline, local notifications |
 | **Windows** | 🟡 **Preview** | TCP/listeners, sessions, remote tools, startup inventory — real Windows runtime verification still pending |
+| **Linux server** | 🟡 **Preview** | connections, listening ports, SSH keys, accounts, systemd/cron/sudoers persistence, SSH logins, alerts via notify command |
 | **Android** | 🧪 **Experimental** | local device audit, VPN/network state, DNS, proxy, ADB, Accessibility, remote-app indicators |
 | **iOS** | 📌 **Planned** | capability-limited companion; no claims of unrestricted process/socket inspection |
 
 ### Verified in the current preview
 
-- ✅ Desktop unit tests: **6/6 passing**
+- ✅ Desktop and server unit tests: **58/58 passing**
 - ✅ Android `assembleDebug`: **BUILD SUCCESSFUL**
 - ✅ Android Lint: **0 issues**
 - ✅ macOS collector: **runtime tested**
@@ -209,6 +210,28 @@ npm run autostart:win
 
 > [!TIP]
 > Start with local mode. Learn what your normal device state looks like before enabling any future remote or automated response capability.
+
+---
+
+## Server mode (cron)
+
+On a Linux server Tashev Guard runs headless: one check per run, messages only about changes.
+
+```bash
+npm run watch
+```
+
+The first run learns a baseline — listening ports, persistence (systemd, cron, sudoers, rc.local, ld.so.preload), SSH keys from `authorized_keys` and accounts that can log in — and sends one summary. After that only new findings are reported: a new SSH key or account, a password login or a login with a key that is not in `TASHEV_GUARD_TRUSTED_KEYS`, new or edited persistence files, new listening ports. Keys themselves are never stored — only fingerprints, comments and types.
+
+Example `/etc/cron.d/tashev-guard` (run it as root, otherwise part of the system is not visible):
+
+```text
+7 * * * * root TASHEV_GUARD_DATA_DIR=/var/lib/tashev-guard TASHEV_GUARD_TRUSTED_KEYS=SHA256:... TASHEV_GUARD_NOTIFY_CMD=/usr/local/bin/notify-owner /usr/bin/node /opt/tashev-guard/src/watch-cli.js >> /var/log/tashev-guard.log 2>&1
+```
+
+The notify command receives the message on stdin — wire it to Telegram, MAX, email or whatever the owner uses. Without it, messages only go to the log. A failed delivery is retried on the next run.
+
+Get your key fingerprint with `ssh-keygen -lf ~/.ssh/id_ed25519.pub`. After intentional changes (a new key, a new service), re-learn the baseline: `node src/watch-cli.js --reset-baseline`.
 
 ---
 

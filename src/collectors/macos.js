@@ -2,6 +2,7 @@ import fs from "node:fs/promises";
 import os from "node:os";
 import path from "node:path";
 import { run } from "../command.js";
+import { parseWho } from "./who.js";
 
 function decodeLsofValue(value) {
   if (!/\\x[0-9a-f]{2}/i.test(value)) return value;
@@ -40,19 +41,6 @@ function splitEndpoint(endpoint = "") {
   const remote = arrow >= 0 ? endpoint.slice(arrow + 2) : null;
   const portMatch = local.match(/:(\d+)$/);
   return { local, remote, localPort: portMatch ? Number(portMatch[1]) : null };
-}
-
-function parseWho(text) {
-  return text.split(/\r?\n/).filter(Boolean).map((line) => {
-    const remoteMatch = line.match(/\(([^)]+)\)\s*$/);
-    const parts = line.trim().split(/\s+/);
-    return {
-      user: parts[0] ?? "unknown",
-      terminal: parts[1] ?? "",
-      remoteHost: remoteMatch?.[1] ?? null,
-      raw: line.trim(),
-    };
-  }).filter((s) => s.remoteHost && s.remoteHost !== "console");
 }
 
 async function collectAutoruns() {
