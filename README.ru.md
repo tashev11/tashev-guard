@@ -16,6 +16,7 @@ Tashev Guard помогает ответить на простой вопрос:
 | --- | --- | --- |
 | macOS | ✅ Проверено | соединения, listening-порты, remote-сессии/инструменты, LaunchAgents/Daemons, baseline, уведомления |
 | Windows | 🟡 Preview | TCP/listeners, сессии, remote-tools, автозагрузка; нужен runtime-прогон на Windows |
+| Linux-сервер | 🟡 Preview | соединения, listening-порты, SSH-ключи, учётные записи, persistence systemd/cron/sudoers, SSH-входы, оповещения через команду |
 | Android | 🧪 Experimental | локальный аудит телефона, VPN/сеть, DNS, proxy, ADB, Accessibility, remote-app индикаторы |
 | iOS | 📌 Планируется | ограниченный companion в рамках возможностей iOS |
 
@@ -70,6 +71,26 @@ npm run autostart:mac
 npm run autostart:win
 ```
 
+## Режим сервера (cron)
+
+На Linux-сервере Guard работает без панели: одна проверка за запуск, сообщения только об изменениях.
+
+```bash
+npm run watch
+```
+
+Первый запуск запоминает эталон — listening-порты, автозапуск (systemd, cron, sudoers, rc.local, ld.so.preload), SSH-ключи из `authorized_keys` и учётные записи с входом — и присылает одну сводку. Дальше приходят только новые находки: новый SSH-ключ или учётная запись, вход по паролю или по ключу не из `TASHEV_GUARD_TRUSTED_KEYS`, новые или изменённые файлы автозапуска, новые порты. Сами ключи не сохраняются — только отпечатки, комментарии и типы.
+
+Пример `/etc/cron.d/tashev-guard` (запуск от root, иначе часть системы не видна):
+
+```text
+7 * * * * root TASHEV_GUARD_DATA_DIR=/var/lib/tashev-guard TASHEV_GUARD_TRUSTED_KEYS=SHA256:... TASHEV_GUARD_NOTIFY_CMD=/usr/local/bin/notify-owner /usr/bin/node /opt/tashev-guard/src/watch-cli.js >> /var/log/tashev-guard.log 2>&1
+```
+
+Команда из `TASHEV_GUARD_NOTIFY_CMD` получает текст сообщения на stdin — подключите её к Telegram, MAX, почте или любому другому каналу владельца. Без неё сообщения только пишутся в лог. Если отправка не удалась, Guard повторит её при следующем запуске.
+
+Отпечаток своего ключа: `ssh-keygen -lf ~/.ssh/id_ed25519.pub`. После намеренных изменений (новый ключ, новый сервис) переобучите эталон: `node src/watch-cli.js --reset-baseline`.
+
 ## Android
 
 Android companion пока специально сделан **read-only**. Он проверяет VPN/тип сети, DNS, Private DNS, HTTP proxy, RX/TX, блокировку экрана, Developer Options, ADB, Accessibility, notification listeners, Device Admin где Android разрешает запрос, известные remote-access приложения и базовый test-keys heuristic.
@@ -99,7 +120,7 @@ cd android
 
 На момент первого публичного preview:
 
-- desktop-тесты: **6/6**
+- тесты desktop и сервера: **58/58**
 - Android `assembleDebug`: **BUILD SUCCESSFUL**
 - Android Lint: **0 issues**
 - macOS: runtime-проверен

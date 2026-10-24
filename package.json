@@ -13,7 +13,8 @@
     "check": "npm test",
     "autostart:mac": "zsh scripts/install-macos.sh",
     "autostart:win": "powershell -ExecutionPolicy Bypass -File scripts/install-windows.ps1",
-    "scan": "node src/scan-cli.js"
+    "scan": "node src/scan-cli.js",
+    "watch": "node src/watch-cli.js"
   },
   "keywords": [
     "security",
